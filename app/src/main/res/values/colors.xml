@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_bg">#CC669900</color>
+    <color name="indicator">#669900</color>
+    <color name="button">#669900</color>
+
+</resources>
