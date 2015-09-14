@@ -21,4 +21,7 @@
     <string name="birthday">BirthDay</string>
     <string name="gender">Gender</string>
     <string name="more">More</string>
+
+    <string name="login_user_hint">Enter username here</string>
+    <string name="login_password_hint">Enter password here</string>
 </resources>

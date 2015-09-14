@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/actionbar"
     android:layout_width="match_parent"
-    android:layout_height="?android:actionBarSize"
+    android:layout_height="?attr/actionBarSize"
     android:background="@color/actionbar_bg"
-    app:theme="@style/MyActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/MyActionBar">
 
 </android.support.v7.widget.Toolbar>

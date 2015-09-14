@@ -88,9 +88,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         // Enable Local Datastore.
-        Parse.enableLocalDatastore(this);
+//        Parse.enableLocalDatastore(this);
         //nit parse
-        Parse.initialize(this, "OYyLBiBkt53DVu4CXCBbr4UgCpQFMoeUisusPQWa", "i1WGIaqAT2Pvqy0E1SY1HhwHbf15KnSJHGBigdl1");
+//        Parse.initialize(this, "OYyLBiBkt53DVu4CXCBbr4UgCpQFMoeUisusPQWa", "i1WGIaqAT2Pvqy0E1SY1HhwHbf15KnSJHGBigdl1");
 
         mDrawerTitle = getResources().getString(R.string.app_name);
         Toolbar toolbar = (Toolbar) findViewById(R.id.actionbar);
@@ -149,6 +149,18 @@ public class MainActivity extends AppCompatActivity {
             }
             setTitle(items.get(position - 1).getTitle());
         } else {
+            switch (position) {
+                case 0:
+                    Intent intent = new Intent(this, LoginAcitivity.class);
+                    startActivity(intent);
+                    finish();
+                case 2:
+                    fragment = new StoreFragment();
+                    break;
+                case 7:
+                    displayExitDialog();
+                    return;
+            }
             setTitle(items.get(position).getTitle());
         }
         FragmentManager fm = getSupportFragmentManager();
